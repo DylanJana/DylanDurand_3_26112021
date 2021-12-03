@@ -1,3 +1,50 @@
+/* Import color and others variables */
+/* Create the principals design colors*/
+/* Import font-size and font-style*/
+/* Create Sizing text */
+body {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
 
+/* Design link */
+a {
+  text-decoration: none;
+}
+
+/* Titles */
+.app__heading {
+  font-weight: bold;
+}
+.app__heading--xl {
+  font-size: 2.5rem;
+}
+.app__heading--xl.app__heading--italic {
+  font-family: "Shrikhand", cursive;
+}
+.app__heading--lg {
+  font-size: 1.5rem;
+}
+.app__heading--md {
+  font-weight: lighter;
+}
+
+/* Intro home */
+.app__heading-intro {
+  font-size: 1.5rem;
+}
+
+/* Font-style for startes, main course and dessert */
+.menu__parts--suptitle {
+  text-transform: uppercase;
+}
+.menu__parts--suptitle:after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  height: 4px;
+  width: 3%;
+  background-color: #99E2D0;
+}
 
 /*# sourceMappingURL=style.css.map */
