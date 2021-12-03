@@ -1,15 +1,24 @@
+/*** Utils ***/
 /* Import color and others variables */
 /* Create the principals design colors*/
+/* List padding top & bottom */
+/* Import mixins */
+/*** Base ***/
 /* Import font-size and font-style*/
 /* Create Sizing text */
 body {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
+  color: black;
 }
 
 /* Design link */
 a {
   text-decoration: none;
+}
+
+a:visited {
+  color: black;
 }
 
 /* Titles */
@@ -45,6 +54,28 @@ a {
   height: 4px;
   width: 3%;
   background-color: #99E2D0;
+}
+
+/*** Layout***/
+/*** Utils ***/
+/* Import color and others variables */
+/* Create the principals design colors*/
+/* List padding top & bottom */
+.header {
+  text-align: center;
+  padding: 15px 0 15px 0;
+  /* Sizing logo */
+  /* Header with arrow */
+}
+.header--logo {
+  width: 200px;
+}
+.header__element {
+  display: flex;
+  align-items: center;
+}
+.header__element p {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

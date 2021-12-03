@@ -2,11 +2,16 @@
 body {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 /* Design link */
 a {
     text-decoration: none;
+}
+
+a:visited {
+    color: black;
 }
 
 /* Titles */

@@ -1,0 +1,24 @@
+/*** Utils ***/
+/* Import color and others variables */
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.header {
+    text-align: center;
+    padding: $padding-tb;
+
+    /* Sizing logo */
+    &--logo {
+        width: 200px;
+    }
+
+    /* Header with arrow */
+    &__element {
+        display: flex;
+        align-items: center;
+
+        p {
+            width: 100%;
+        }
+    }
+}

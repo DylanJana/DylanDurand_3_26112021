@@ -1,4 +1,12 @@
+/*** Utils ***/
 /* Import color and others variables */
 @import "./utils/variables";
+/* Import mixins */
+@import "./utils/mixins";
+
+/*** Base ***/
 /* Import font-size and font-style*/
 @import "./base/fonts";
+
+/*** Layout***/
+@import "./layout/header.scss"
