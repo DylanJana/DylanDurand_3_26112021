@@ -1,0 +1,31 @@
+/* Import utils variables */
+@import "../utils/variables";
+/* Import mixins */
+@import "../utils/mixins";
+
+/* Design footer */
+.footer {
+    @include footer;
+
+    &__logo {
+        font-family: $title;
+    }
+
+    &__nav ul {
+        list-style: none;
+        padding-left: 0;
+
+        li:first-child a i {
+            margin-right: 7.5px;
+        }
+
+        li:nth-child(2) a i {
+            margin-right: 3.5px;
+        }
+
+        a {
+            color: white;
+            line-height: $line-height;
+        }
+    }
+}

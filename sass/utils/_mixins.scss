@@ -1,5 +1,15 @@
+/*** Utils ***/
+/* Variables */
+@import "../utils/variables";
+
 @mixin flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@mixin footer {
+    color: $white;
+    background-color: #353535;
+    padding: 10px 0 25px 0;
 }

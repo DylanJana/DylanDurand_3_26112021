@@ -7,6 +7,8 @@
 /*** Base ***/
 /* Import font-size and font-style*/
 @import "./base/fonts";
+@import "./base/template";
 
 /*** Layout***/
-@import "./layout/header.scss"
+@import "./layout/header.scss";
+@import "./layout/footer.scss";

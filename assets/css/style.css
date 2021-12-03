@@ -1,16 +1,26 @@
 /*** Utils ***/
 /* Import color and others variables */
 /* Create the principals design colors*/
+/* Title */
+/* Text height */
 /* List padding top & bottom */
 /* List box-shadow */
 /* Import mixins */
+/*** Utils ***/
+/* Variables */
+/* Create the principals design colors*/
+/* Title */
+/* Text height */
+/* List padding top & bottom */
+/* List box-shadow */
 /*** Base ***/
 /* Import font-size and font-style*/
 /* Create Sizing text */
 body {
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Roboto", sans-serif;
   color: black;
+  margin: 0;
 }
 
 /* Design link */
@@ -53,14 +63,28 @@ a:visited {
   display: block;
   margin-top: 5px;
   height: 4px;
-  width: 3%;
+  width: 60px;
   background-color: #99E2D0;
+}
+
+.box-sizing {
+  box-sizing: border-box;
+  padding: 0 15px;
 }
 
 /*** Layout***/
 /*** Utils ***/
 /* Import color and others variables */
 /* Create the principals design colors*/
+/* Title */
+/* Text height */
+/* List padding top & bottom */
+/* List box-shadow */
+/*** Utils ***/
+/* Variables */
+/* Create the principals design colors*/
+/* Title */
+/* Text height */
 /* List padding top & bottom */
 /* List box-shadow */
 .header {
@@ -79,6 +103,44 @@ a:visited {
 }
 .header__element p {
   width: 100%;
+}
+
+/* Import utils variables */
+/* Create the principals design colors*/
+/* Title */
+/* Text height */
+/* List padding top & bottom */
+/* List box-shadow */
+/* Import mixins */
+/*** Utils ***/
+/* Variables */
+/* Create the principals design colors*/
+/* Title */
+/* Text height */
+/* List padding top & bottom */
+/* List box-shadow */
+/* Design footer */
+.footer {
+  color: #fff;
+  background-color: #353535;
+  padding: 10px 0 25px 0;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+}
+.footer__nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer__nav ul li:first-child a i {
+  margin-right: 7.5px;
+}
+.footer__nav ul li:nth-child(2) a i {
+  margin-right: 3.5px;
+}
+.footer__nav ul a {
+  color: white;
+  line-height: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
