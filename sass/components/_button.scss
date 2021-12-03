@@ -1,0 +1,13 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../utils/maps";
+
+/* Design button site */
+.app__button--xl {
+    @include btn-xl;
+    line-height: map-get($map: $line-height, $key: xl);
+
+    &:hover {
+        background: linear-gradient($color-secondary-lighten, $color-primary-lighten);
+    }
+}

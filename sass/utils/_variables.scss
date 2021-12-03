@@ -1,16 +1,23 @@
 /* Create the principals design colors*/
 $color-primary: #9356DC;
+$color-primary-lighten : lighten($color-primary, 10%);
 $color-secondary: #FF79DA;
+$color-secondary-lighten: lighten($color-secondary, 10%);
 $color-tiers: #99E2D0;
 $white: #fff;
+$color-btn : linear-gradient($color-secondary, $color-primary);
+$bg-primary: #F6F6F6;
 
 /* Title */
 $title: "Shrikhand", cursive;
 
-/* Text height */
+/* Text*/
 $line-height: 25px;
+$font-weight-lighter: 200;
+
 /* List padding top & bottom */
 $padding-tb: 15px 0 15px 0;
+$padding-tb-lg: 30px 0 30px 0;
 
 /* List box-shadow */
-$box-shadow-header: 5px 5px 15px 0px rgba(0,0,0,0.10);
+$box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, .1);

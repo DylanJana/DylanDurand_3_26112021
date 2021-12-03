@@ -9,6 +9,12 @@
 @import "./base/fonts";
 @import "./base/template";
 
-/*** Layout***/
+/*** Components ***/
+@import "./components/button";
+
+/*** Layout ***/
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
+
+/*** Pages ***/
+@import "./pages/home.scss"

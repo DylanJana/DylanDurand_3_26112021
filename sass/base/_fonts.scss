@@ -11,10 +11,6 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: black;
-}
-
 /* Titles */
 .app__heading {
     font-weight: bold;
@@ -31,18 +27,20 @@ a:visited {
     }
 
     &--md {
-        font-weight: lighter;
+        font-weight: $font-weight-lighter;
     }
 }
 
 /* Intro home */
 .app__heading-intro {
     font-size: 1.5rem;
+    font-weight: $font-weight-lighter;
 }
 
 /* Font-style for startes, main course and dessert */
 .menu__parts--suptitle {
     text-transform: uppercase;
+    font-weight: $font-weight-lighter;
 
     &:after {
         content: '';
