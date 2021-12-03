@@ -2,6 +2,7 @@
 @import "../utils/variables";
 /* Import mixins */
 @import "../utils/mixins";
+@import "../utils/maps";
 
 /* Design footer */
 .footer {
@@ -16,16 +17,16 @@
         padding-left: 0;
 
         li:first-child a i {
-            margin-right: 7.5px;
+            margin: map-get($map: $margin, $key: mr-md);
         }
 
         li:nth-child(2) a i {
-            margin-right: 3.5px;
+            margin: map-get($map: $margin, $key: mr-sm );
         }
 
         a {
             color: white;
-            line-height: $line-height;
+            line-height: map-get($map: $line-height, $key: md);
         }
     }
 }

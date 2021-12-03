@@ -2,21 +2,22 @@
 /* Import color and others variables */
 /* Create the principals design colors*/
 /* Title */
-/* Text*/
-/* List padding top & bottom */
-/* List box-shadow */
 /* Import mixins */
 /*** Utils ***/
 /* Variables */
 /* Create the principals design colors*/
 /* Title */
-/* Text*/
-/* List padding top & bottom */
-/* List box-shadow */
 /* Create button */
 /* Design button site */
 /*** Base ***/
 /* Import font-size and font-style*/
+/*** Utils ***/
+/*** Utils ***/
+/* Variables */
+/* Create the principals design colors*/
+/* Title */
+/* Create button */
+/* Design button site */
 /* Create Sizing text */
 body {
   font-size: 14px;
@@ -41,7 +42,7 @@ a {
   font-family: "Shrikhand", cursive;
 }
 .app__heading--lg {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .app__heading--md {
   font-weight: 200;
@@ -67,24 +68,24 @@ a {
   background-color: #99E2D0;
 }
 
+/*** Utils ***/
+/* Create the principals design colors*/
+/* Title */
 .box-sizing {
   box-sizing: border-box;
-  padding: 0 15px;
+  padding: 0 30px;
 }
 
+/* List padding top & bottom */
+/* List box-shadow */
+/* Border-radius */
 /*** Components ***/
 /* Create the principals design colors*/
 /* Title */
-/* Text*/
-/* List padding top & bottom */
-/* List box-shadow */
 /*** Utils ***/
 /* Variables */
 /* Create the principals design colors*/
 /* Title */
-/* Text*/
-/* List padding top & bottom */
-/* List box-shadow */
 /* Create button */
 /* Design button site */
 /* Design button site */
@@ -101,21 +102,96 @@ a {
   background: linear-gradient(#fface8, #ae80e5);
 }
 
+/*** Utils ***/
+/*** Utils ***/
+/* Variables */
+/* Create the principals design colors*/
+/* Title */
+/* Create button */
+/* Design button site */
+/* Base */
+/*** Utils ***/
+/* Create the principals design colors*/
+/* Title */
+.box-sizing {
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+
+/* List padding top & bottom */
+/* List box-shadow */
+/* Border-radius */
+.process__step {
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 0 15px 0;
+  margin: 0 0 25px 0;
+}
+.process__step h2.process-1::before {
+  content: "1";
+  display: inline-block;
+  position: relative;
+  left: -4%;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  background-color: #9356DC;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100%;
+}
+.process__step h2.process-2::before {
+  content: "2";
+  display: inline-block;
+  position: relative;
+  left: -4%;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  background-color: #9356DC;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100%;
+}
+.process__step h2.process-3::before {
+  content: "3";
+  display: inline-block;
+  position: relative;
+  left: -4%;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  background-color: #9356DC;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100%;
+}
+.process__step--icon {
+  margin: 0 7.5px 0 0;
+}
+.process__step--purple {
+  background-color: rgba(174, 128, 229, 0.1);
+}
+.process__step--purple--icon {
+  color: #9356DC;
+  margin: 0 7.5px 0 0;
+}
+
 /*** Layout ***/
 /*** Utils ***/
 /* Import color and others variables */
 /* Create the principals design colors*/
 /* Title */
-/* Text*/
-/* List padding top & bottom */
-/* List box-shadow */
 /*** Utils ***/
 /* Variables */
 /* Create the principals design colors*/
 /* Title */
-/* Text*/
-/* List padding top & bottom */
-/* List box-shadow */
 /* Create button */
 /* Design button site */
 .header {
@@ -150,17 +226,11 @@ a {
 /* Import utils variables */
 /* Create the principals design colors*/
 /* Title */
-/* Text*/
-/* List padding top & bottom */
-/* List box-shadow */
 /* Import mixins */
 /*** Utils ***/
 /* Variables */
 /* Create the principals design colors*/
 /* Title */
-/* Text*/
-/* List padding top & bottom */
-/* List box-shadow */
 /* Create button */
 /* Design button site */
 /* Design footer */
@@ -177,10 +247,10 @@ a {
   padding-left: 0;
 }
 .footer__nav ul li:first-child a i {
-  margin-right: 7.5px;
+  margin: 0 7.5px 0 0;
 }
 .footer__nav ul li:nth-child(2) a i {
-  margin-right: 3.5px;
+  margin: 0 3.5px 0 0;
 }
 .footer__nav ul a {
   color: white;

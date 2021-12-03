@@ -1,4 +1,17 @@
+/*** Utils ***/
+@import "../utils/variables";
+
 .box-sizing {
     box-sizing: border-box;
-    padding: 0 15px;
+    padding: 0 30px;
 }
+
+/* List padding top & bottom */
+$padding-tb: 15px 0 15px 0;
+$padding-tb-lg: 30px 0 30px 0;
+
+/* List box-shadow */
+$box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, .1);
+
+/* Border-radius */
+$border-radius: 20px; 

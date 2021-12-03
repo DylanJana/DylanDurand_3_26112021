@@ -1,0 +1,46 @@
+/*** Utils ***/
+@import "../utils/maps";
+@import "../utils/mixins";
+/* Base */
+@import "../base/template";
+
+.process__step {
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    padding: $padding-tb;
+    margin: map-get(
+        $map: $margin, $key: mb-md 
+    );
+    
+    h2.process-1::before {
+        content: '1';
+        @include hover-process;
+    }
+
+    h2.process-2::before {
+        content: '2';
+        @include hover-process;
+    }
+
+    h2.process-3::before {
+        content: '3';
+        @include hover-process;
+    }
+
+    &--icon {
+        margin: map-get(
+            $map: $margin, $key: mr-md,
+            );
+    }
+
+    &--purple {
+        background-color: rgba($color-primary-lighten, 0.1);
+
+        &--icon {
+            color: $color-primary;
+            margin: map-get(
+            $map: $margin, $key: mr-md,
+            );
+        }
+    }
+}
