@@ -1,0 +1,35 @@
+.restaurant__card {
+    object-fit: contain;
+    box-shadow: $box-shadow;
+    margin: map-get($map: $margin, $key: mtb-xl);
+    border-radius: $border-radius;
+    color: $black;
+
+    &:hover {
+        @include shadow;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    p img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    &--legend {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $padding-md;
+
+        h2, h3 {
+            margin: 0;
+        }
+
+        i {
+            font-size: 25px;
+        }
+    }
+}

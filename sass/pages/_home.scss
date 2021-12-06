@@ -21,5 +21,20 @@
 .hero {
     text-align: center;
     background-color: $bg-primary;
-    padding: $padding-tb-lg;
 }
+
+/* Padding top and bottom title section process */
+.process {
+    h1 {
+        padding: $padding-b;
+    }
+}
+/* Background section 4 restaurants*/
+.restaurant {
+    background-color: $bg-primary;
+
+    h1 {
+        padding: $padding-b;
+    }
+}
+
