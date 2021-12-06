@@ -4,6 +4,7 @@
     margin: map-get($map: $margin, $key: mtb-xl);
     border-radius: $border-radius;
     color: $black;
+    position: relative;
 
     &:hover {
         @include shadow;
@@ -31,5 +32,18 @@
         i {
             font-size: 25px;
         }
+    }
+}
+
+/* Design green rectangle */
+.restaurant__img-new {
+    strong {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border-radius: 5px;
+        background-color: #99e2d0;
+        color: #008766;
+        padding: 7.5px 20px;
     }
 }

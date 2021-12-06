@@ -222,6 +222,7 @@ a {
   margin: 30px 0;
   border-radius: 20px;
   color: #000;
+  position: relative;
 }
 .restaurant__card:hover {
   box-shadow: 0 5px 5px 5px #b3b3b3;
@@ -244,6 +245,17 @@ a {
 }
 .restaurant__card--legend i {
   font-size: 25px;
+}
+
+/* Design green rectangle */
+.restaurant__img-new strong {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 5px;
+  background-color: #99e2d0;
+  color: #008766;
+  padding: 7.5px 20px;
 }
 
 /*** Layout ***/
