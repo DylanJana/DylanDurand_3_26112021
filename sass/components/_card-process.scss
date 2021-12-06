@@ -14,17 +14,17 @@
     
     h2.process-1::before {
         content: '1';
-        @include hover-process;
+        @include before-process;
     }
 
     h2.process-2::before {
         content: '2';
-        @include hover-process;
+        @include before-process;
     }
 
     h2.process-3::before {
         content: '3';
-        @include hover-process;
+        @include before-process;
     }
 
     &--icon {

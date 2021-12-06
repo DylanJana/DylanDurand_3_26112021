@@ -25,7 +25,7 @@
     border-radius: 50px;
 }
 
-@mixin hover-process {
+@mixin before-process {
     display: inline-block;
     position: relative;
     left: -4%;
@@ -38,4 +38,8 @@
     text-align: center;
     vertical-align: middle;
     border-radius: 100%;
+}
+
+@mixin shadow($size: $size-shadow, $shadow: $color-shadow) {
+    box-shadow: $size darken($shadow, 10%);
 }

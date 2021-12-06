@@ -7,8 +7,13 @@ $color-tiers: #99E2D0;
 $white: #fff;
 $color-btn : linear-gradient($color-secondary, $color-primary);
 $bg-primary: #F6F6F6;
-$box-shadow-color: rgba(0, 0, 0, .1);
 
 /* Title */
 $title: "Shrikhand", cursive;
 $font-weight-lighter: 200;
+
+/* List box-shadow */
+$color-shadow: rgb(204, 204, 204);
+$size-shadow: 0 5px 5px 5px;
+$box-shadow: $size-shadow $color-shadow;
+

@@ -1,17 +1,17 @@
 /*** Utils ***/
 /* Import color and others variables */
-@import "./utils/variables";
+@import "./utils/variables.scss";
 /* Import mixins */
-@import "./utils/mixins";
+@import "./utils/mixins.scss";
 
 /*** Base ***/
 /* Import font-size and font-style*/
-@import "./base/fonts";
-@import "./base/template";
+@import "./base/fonts.scss";
+@import "./base/template.scss";
 
 /*** Components ***/
-@import "./components/button";
-@import "./components/card-process";
+@import "./components/button.scss";
+@import "./components/card-process.scss";
 
 /*** Layout ***/
 @import "./layout/header.scss";
