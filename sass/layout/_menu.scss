@@ -6,12 +6,22 @@
     background-color: $bg-primary;
     border-radius: $border-radius-menu;
 
+    /* Center button */
+    &__btn{
+        text-align: center;
+    }
+
     &__heading {
         padding: $padding-t;
         @include flex;
+        align-items: baseline;
+
+        h1 {
+            margin-bottom: 0;
+        }
 
         i {
             font-size: 1.65rem;
         }
-    }    
+    }
 }

@@ -163,7 +163,7 @@ a {
   border-radius: 20px;
   box-shadow: 0 5px 5px 5px #cccccc;
   padding: 15px 0 15px 0;
-  margin: 0 0 25px 0;
+  margin: 30px 0;
 }
 .process__step h2.process-1::before {
   content: "1";
@@ -263,6 +263,35 @@ a {
   padding: 7.5px 20px;
 }
 
+.menu__parts a {
+  color: black;
+}
+.menu__parts h2, .menu__parts h3 {
+  margin: 0;
+}
+.menu__parts .app__price--strong {
+  margin-bottom: 0;
+}
+.menu__parts--btn {
+  border-radius: 20px;
+  box-shadow: 0 5px 5px 5px #cccccc;
+  padding: 15px 20px 15px 20px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: end;
+}
+.menu__parts--btn h2 {
+  font-size: 1.05rem;
+}
+.menu__parts--btn h3 {
+  font-size: 0.85rem;
+}
+.menu__parts--suptitle {
+  margin: 60px 0 0 0;
+}
+
 /*** Layout ***/
 /*** Utils ***/
 /* Import color and others variables */
@@ -351,12 +380,20 @@ a {
   top: -75px;
   background-color: #F6F6F6;
   border-radius: 30px 30px 0 0;
+  /* Center button */
+}
+.menu__btn {
+  text-align: center;
 }
 .menu__heading {
   padding: 15px 0 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  align-items: baseline;
+}
+.menu__heading h1 {
+  margin-bottom: 0;
 }
 .menu__heading i {
   font-size: 1.65rem;

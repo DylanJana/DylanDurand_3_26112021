@@ -45,11 +45,11 @@
 }
 
 /* Design card process & card menu element */
-@mixin design-card {
+@mixin design-card ($padding: $padding-tb){
     border-radius: $border-radius;
     box-shadow: $box-shadow;
-    padding: $padding-tb;
+    padding: $padding;
     margin: map-get(
-        $map: $margin, $key: mb-md 
+        $map: $margin, $key: mtb-xl 
     );
 }

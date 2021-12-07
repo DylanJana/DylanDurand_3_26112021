@@ -1,0 +1,34 @@
+.menu__parts {
+
+    a {
+        color: black;
+    }
+
+    h2, h3 {
+        margin: 0;
+    }
+
+    .app__price--strong {
+        margin-bottom: 0;
+    }
+
+    &--btn {
+        @include design-card ($padding: 15px 20px 15px 20px);
+        @include flex;
+        align-items: end;
+
+        h2 {
+            font-size: 1.05rem;
+        }
+
+        h3 {
+            font-size: 0.85rem;
+        }
+    }
+
+    &--suptitle {
+        margin: map-get(
+            $map: $margin, $key: mt-xxl,
+            );
+    };
+}
