@@ -7,12 +7,8 @@
 
 
 .process__step {
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
-    padding: $padding-tb;
-    margin: map-get(
-        $map: $margin, $key: mb-md 
-    );
+    background-color: darken($bg-primary, 1%);
+    @include design-card;
     
     h2.process-1::before {
         content: '1';
@@ -36,7 +32,7 @@
     }
 
     &--purple {
-        background-color: rgba($color-primary-lighten, 0.1);
+        background-color: rgba($color-primary-lighten, 0.3);
 
         &--icon {
             color: $color-primary;

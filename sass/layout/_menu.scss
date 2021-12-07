@@ -1,0 +1,17 @@
+@import "../utils/variables";
+
+.menu {
+    position: relative;
+    top: -75px;
+    background-color: $bg-primary;
+    border-radius: $border-radius-menu;
+
+    &__heading {
+        padding: $padding-t;
+        @include flex;
+
+        i {
+            font-size: 1.65rem;
+        }
+    }    
+}

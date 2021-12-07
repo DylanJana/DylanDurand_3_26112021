@@ -43,3 +43,13 @@
 @mixin shadow($size: $size-shadow, $shadow: $color-shadow) {
     box-shadow: $size darken($shadow, 10%);
 }
+
+/* Design card process & card menu element */
+@mixin design-card {
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    padding: $padding-tb;
+    margin: map-get(
+        $map: $margin, $key: mb-md 
+    );
+}
