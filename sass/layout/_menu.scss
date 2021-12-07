@@ -1,10 +1,14 @@
 @import "../utils/variables";
 
 .menu {
-    position: relative;
-    top: -75px;
     background-color: $bg-primary;
-    border-radius: $border-radius-menu;
+
+    &__content {
+        position: relative;
+        top: -75px;
+        border-radius: $border-radius-menu;
+        background-color: $bg-primary;
+    }
 
     /* Center button */
     &__btn{

@@ -376,11 +376,14 @@ a {
 /* Title */
 /* List box-shadow */
 .menu {
+  background-color: #F6F6F6;
+  /* Center button */
+}
+.menu__content {
   position: relative;
   top: -75px;
-  background-color: #F6F6F6;
   border-radius: 30px 30px 0 0;
-  /* Center button */
+  background-color: #F6F6F6;
 }
 .menu__btn {
   text-align: center;
