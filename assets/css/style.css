@@ -12,6 +12,7 @@
 /* Create button */
 /* Design button site */
 /* Design card process & card menu element */
+/*** Breakpoints Mixins ***/
 /*** Base ***/
 /* Import font-size and font-style*/
 /*** Utils ***/
@@ -23,6 +24,7 @@
 /* Create button */
 /* Design button site */
 /* Design card process & card menu element */
+/*** Breakpoints Mixins ***/
 /* Create Sizing text */
 body {
   font-size: 14px;
@@ -101,6 +103,8 @@ a {
 /* Create button */
 /* Design button site */
 /* Design card process & card menu element */
+/*** Breakpoints Mixins ***/
+/* Breakpoints */
 /*** Utils ***/
 /* Create the principals design colors*/
 /* Title */
@@ -133,6 +137,7 @@ a {
 }
 
 /*** Utils ***/
+/* Breakpoints */
 /*** Utils ***/
 /* Variables */
 /* Create the principals design colors*/
@@ -141,6 +146,7 @@ a {
 /* Create button */
 /* Design button site */
 /* Design card process & card menu element */
+/*** Breakpoints Mixins ***/
 /* Base */
 /*** Utils ***/
 /* Create the principals design colors*/
@@ -158,6 +164,16 @@ a {
 
 /* List padding top & bottom */
 /* Border-radius */
+.process {
+  /* Responsive Design for the tablet center text in the process card*/
+}
+@media screen and (min-width: 810px) {
+  .process {
+    text-align: center;
+    /* End Responsive Design fot the tablet */
+  }
+}
+
 .process__step {
   background-color: #f3f3f3;
   border-radius: 20px;
@@ -219,6 +235,43 @@ a {
 .process__step--purple--icon {
   color: #9356DC;
   margin: 0 7.5px 0 0;
+}
+
+/*** Utils ***/
+/* Variables */
+/* Create the principals design colors*/
+/* Title */
+/* List box-shadow */
+/* Create button */
+/* Design button site */
+/* Design card process & card menu element */
+/*** Breakpoints Mixins ***/
+.restaurant {
+  /* Responsive Design for the tablet center text in the process card*/
+  /* End Responsive Design fot the tablet */
+}
+@media screen and (min-width: 810px) {
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .restaurant h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 810px) and (min-width: 810px) {
+  .restaurant article {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 810px) {
+  .restaurant__link {
+    width: 45%;
+    margin: auto;
+  }
 }
 
 .restaurant__card {
@@ -306,6 +359,7 @@ a {
 /* Create button */
 /* Design button site */
 /* Design card process & card menu element */
+/*** Breakpoints Mixins ***/
 .header {
   text-align: center;
   padding: 15px 0 15px 0;
@@ -348,11 +402,20 @@ a {
 /* Create button */
 /* Design button site */
 /* Design card process & card menu element */
+/*** Breakpoints Mixins ***/
+/* Breakpoints */
 /* Design footer */
 .footer {
   color: #fff;
   background-color: #353535;
   padding: 10px 0 25px 0;
+  /* Responsive tablet */
+  /* End responsive tablet */
+}
+@media screen and (min-width: 810px) {
+  .footer {
+    text-align: center;
+  }
 }
 .footer__logo {
   font-family: "Shrikhand", cursive;
@@ -360,6 +423,14 @@ a {
 .footer__nav ul {
   list-style: none;
   padding-left: 0;
+  /* Responsive tablet */
+  /* End responsive tablet */
+}
+@media screen and (min-width: 810px) {
+  .footer__nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .footer__nav ul li:first-child a i {
   margin: 0 7.5px 0 0;
@@ -403,6 +474,7 @@ a {
 }
 
 /*** Pages ***/
+/* Breakpoints */
 /* input home */
 .search__input {
   width: 100%;
@@ -437,7 +509,3 @@ a {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-.search__input {
-  font-family: 'Font Awesome 5 Free';
-}

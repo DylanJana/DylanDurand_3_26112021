@@ -1,3 +1,35 @@
+@import "../utils/mixins";
+
+.restaurant {
+    /* Responsive Design for the tablet center text in the process card*/
+    @include tablet-only {
+        display: flex;
+        flex-wrap: wrap;
+
+        h1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        article {
+            @include tablet-only {
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+            }
+        }
+    }
+
+    &__link {
+        @include tablet-only {
+            width: 45%;
+            margin: auto;
+        };
+    }
+    /* End Responsive Design fot the tablet */
+}
+
+
 .restaurant__card {
     object-fit: contain;
     box-shadow: $box-shadow;

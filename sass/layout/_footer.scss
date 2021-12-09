@@ -7,14 +7,26 @@
 /* Design footer */
 .footer {
     @include footer;
+    /* Responsive tablet */
+    @include tablet-only {
+        text-align: center;
+    }
+    /* End responsive tablet */
+
 
     &__logo {
         font-family: $title;
     }
-
+    
     &__nav ul {
         list-style: none;
         padding-left: 0;
+        /* Responsive tablet */
+        @include tablet-only {
+            display: flex;
+            justify-content: space-between;
+        }
+        /* End responsive tablet */
 
         li:first-child a i {
             margin: map-get($map: $margin, $key: mr-md);

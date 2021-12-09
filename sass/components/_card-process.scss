@@ -4,6 +4,13 @@
 /* Base */
 @import "../base/template";
 
+.process {
+    /* Responsive Design for the tablet center text in the process card*/
+    @include tablet-only {
+        text-align: center;
+    /* End Responsive Design fot the tablet */
+    }
+}
 
 
 .process__step {

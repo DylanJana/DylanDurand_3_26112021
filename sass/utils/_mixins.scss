@@ -53,3 +53,10 @@
         $map: $margin, $key: mtb-xl 
     );
 }
+
+/*** Breakpoints Mixins ***/
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
