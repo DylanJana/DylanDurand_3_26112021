@@ -11,16 +11,14 @@
     /* End Responsive Design for the tablet */
     }
 
-    /* Responsive Design for the desktop*/
+    /* Responsive Design for the desktop */
     @include desktop-only {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        h1 {
-            width: 100%;
-        }
+        @include design-card-responsive;
+    }
     /* End Responsive Design for the desktop */
+
+    h1 {
+        width: 100%;
     }
 }
 

@@ -1,5 +1,26 @@
 @import "../utils/variables";
 
+/* Replace one image by another image with a better quality for tablet and desktop*/
+.hero__restaurant {
+
+    img {
+        width: 100%;
+    }
+
+    &-img {
+        @include tablet-only {
+            display: none;
+        }
+    }
+
+    &-img--lg {
+        display: none;
+        @include tablet-only {
+            display: block;
+        }
+    }
+}
+
 .menu {
     background-color: $bg-primary;
 

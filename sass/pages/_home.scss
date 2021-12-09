@@ -2,18 +2,21 @@
 /* input home */
 .search {
 
+    form {
+        background-color: darken($bg-primary, 3%);
+        text-align: center;
+    }
+
     &__input {
-    width: 100%;
     line-height: map-get($map: $line-height, $key:md );
-    text-align: center;
+    margin: map-get($map: $margin, $key:ml-lg );
     border: 0;
     background-color: darken($bg-primary, 3%);
     padding: $padding-tb;
-    }
 
-    &::placeholder::before {
-        content: 'f3c5';
-        font-family: "Font Awesome 5 Free";
+        &::placeholder {
+            font-weight: bold;
+        }
     }
 }
 

@@ -54,6 +54,13 @@
     );
 }
 
+/* Design card process & card menu element */
+@mixin design-card-responsive {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
+
 /*** Breakpoints Mixins ***/
 @mixin tablet-only {
     @media screen and (min-width: map-get($breakpoints, tablet)) {
