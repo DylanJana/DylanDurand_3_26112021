@@ -9,7 +9,7 @@
 
     &__input {
     line-height: map-get($map: $line-height, $key:md );
-    margin: map-get($map: $margin, $key:ml-lg );
+    text-align: center;
     border: 0;
     background-color: darken($bg-primary, 3%);
     padding: $padding-tb;

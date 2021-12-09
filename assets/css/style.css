@@ -519,7 +519,7 @@ a {
 }
 .search__input {
   line-height: 25px;
-  margin: 0 0 0 15px;
+  text-align: center;
   border: 0;
   background-color: #eeeeee;
   padding: 15px 0 15px 0;
