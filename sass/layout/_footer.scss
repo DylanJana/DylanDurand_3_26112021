@@ -13,11 +13,23 @@
     }
     /* End responsive tablet */
 
+    section {
+        /* Responsive desktop */
+        @include desktop-only {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        margin: auto;
+        }
+        /* End responsive desktop */
+    }
+
 
     &__logo {
         font-family: $title;
     }
-    
+
     &__nav ul {
         list-style: none;
         padding-left: 0;
@@ -40,5 +52,13 @@
             color: white;
             line-height: map-get($map: $line-height, $key: md);
         }
+    }
+
+    &__nav {
+        /* Responsive desktop */
+        @include desktop-only {
+        width: 78%;
+        }
+        /* End responsive desktop */
     }
 }

@@ -11,7 +11,7 @@
 @mixin footer {
     color: $white;
     background-color: #353535;
-    padding: 10px 0 25px 0;
+    padding: 25px 0 25px 0;
 }
 
 /* Create button */
@@ -57,6 +57,12 @@
 /*** Breakpoints Mixins ***/
 @mixin tablet-only {
     @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
         @content;
     }
 }

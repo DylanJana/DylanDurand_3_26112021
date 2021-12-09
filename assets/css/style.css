@@ -166,11 +166,23 @@ a {
 /* Border-radius */
 .process {
   /* Responsive Design for the tablet center text in the process card*/
+  /* Responsive Design for the desktop*/
 }
 @media screen and (min-width: 810px) {
   .process {
     text-align: center;
-    /* End Responsive Design fot the tablet */
+    /* End Responsive Design for the tablet */
+  }
+}
+@media screen and (min-width: 1100px) {
+  .process {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* End Responsive Design for the desktop */
+  }
+  .process h1 {
+    width: 100%;
   }
 }
 
@@ -180,6 +192,13 @@ a {
   box-shadow: 0 5px 5px 5px #cccccc;
   padding: 15px 0 15px 0;
   margin: 30px 0;
+  /* Responsive Design for the desktop*/
+}
+@media screen and (min-width: 1100px) {
+  .process__step {
+    padding: 15px;
+    /* End Responsive Design for the tablet */
+  }
 }
 .process__step h2.process-1::before {
   content: "1";
@@ -408,13 +427,26 @@ a {
 .footer {
   color: #fff;
   background-color: #353535;
-  padding: 10px 0 25px 0;
+  padding: 25px 0 25px 0;
   /* Responsive tablet */
   /* End responsive tablet */
 }
 @media screen and (min-width: 810px) {
   .footer {
     text-align: center;
+  }
+}
+.footer section {
+  /* Responsive desktop */
+  /* End responsive desktop */
+}
+@media screen and (min-width: 1100px) {
+  .footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
   }
 }
 .footer__logo {
@@ -441,6 +473,15 @@ a {
 .footer__nav ul a {
   color: white;
   line-height: 25px;
+}
+.footer__nav {
+  /* Responsive desktop */
+  /* End responsive desktop */
+}
+@media screen and (min-width: 1100px) {
+  .footer__nav {
+    width: 78%;
+  }
 }
 
 /* Create the principals design colors*/

@@ -8,7 +8,19 @@
     /* Responsive Design for the tablet center text in the process card*/
     @include tablet-only {
         text-align: center;
-    /* End Responsive Design fot the tablet */
+    /* End Responsive Design for the tablet */
+    }
+
+    /* Responsive Design for the desktop*/
+    @include desktop-only {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        h1 {
+            width: 100%;
+        }
+    /* End Responsive Design for the desktop */
     }
 }
 
@@ -16,6 +28,12 @@
 .process__step {
     background-color: darken($bg-primary, 1%);
     @include design-card;
+
+    /* Responsive Design for the desktop*/
+    @include desktop-only {
+       padding: $padding-md;
+    /* End Responsive Design for the tablet */
+    }
     
     h2.process-1::before {
         content: '1';
