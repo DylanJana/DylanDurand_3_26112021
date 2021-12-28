@@ -111,6 +111,60 @@
   transform: scaleY(0);
 }
 
+/* Animation card check choice */
+.menu__parts--btn {
+  position: relative;
+  overflow: hidden;
+}
+.menu__parts--btn:hover .menu__parts--check {
+  transform: translateX(-70px);
+}
+.menu__parts--btn:hover .menu__parts--check i {
+  transform: rotate(0);
+}
+.menu__parts--btn:hover .app__price--strong {
+  transform: translateX(-60px);
+}
+.menu__parts--btn .app__price--strong {
+  transition: transform 1s;
+}
+.menu__parts--btn:hover .menu__parts--txt h3 {
+  width: 180px;
+}
+.menu__parts--btn:hover .menu__parts--txt h2 {
+  width: 180px;
+}
+
+.menu__parts--check {
+  font-size: 30px;
+  color: white;
+  line-height: 66px;
+  text-align: center;
+  height: 66px;
+  width: 66px;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  display: inline-block;
+  position: absolute;
+  right: -70px;
+  bottom: 0;
+  transform: translateX(0);
+  transition: transform 1s;
+  z-index: 2;
+}
+.menu__parts--check i {
+  transition: transform 0.5s 0.3s;
+  transform: rotate(-270deg);
+}
+
+.menu__parts--txt h3, .menu__parts--txt h2 {
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: width 1s;
+}
+
 /* Animation card opacity */
 @keyframes alternate-opacity {
   from {
