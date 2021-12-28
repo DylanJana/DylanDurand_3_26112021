@@ -111,6 +111,46 @@
   transform: scaleY(0);
 }
 
+/* Animation card opacity */
+@keyframes alternate-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu__parts--btn {
+  animation: alternate-opacity 1000ms both ease-in-out;
+}
+.menu__parts--btn--1 {
+  animation-delay: 111.1111111111ms;
+}
+.menu__parts--btn--2 {
+  animation-delay: 222.2222222222ms;
+}
+.menu__parts--btn--3 {
+  animation-delay: 333.3333333333ms;
+}
+.menu__parts--btn--4 {
+  animation-delay: 444.4444444444ms;
+}
+.menu__parts--btn--5 {
+  animation-delay: 555.5555555556ms;
+}
+.menu__parts--btn--6 {
+  animation-delay: 666.6666666667ms;
+}
+.menu__parts--btn--7 {
+  animation-delay: 777.7777777778ms;
+}
+.menu__parts--btn--8 {
+  animation-delay: 888.8888888889ms;
+}
+.menu__parts--btn--9 {
+  animation-delay: 1000ms;
+}
+
 /*** Base ***/
 /* Import font-size and font-style*/
 /*** Utils ***/

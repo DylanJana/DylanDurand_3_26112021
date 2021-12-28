@@ -111,3 +111,26 @@
   transform-origin: center;
   transform: scaleY(0);
 }
+
+/* Animation card opacity */
+@keyframes alternate-opacity {
+  from {
+      opacity: 0;
+  } 
+  
+  to {
+      opacity: 1;
+  }
+}
+
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / 9;
+
+.menu__parts--btn {
+  animation: alternate-opacity $anim-dur both ease-in-out;
+  @for $i from 1 through 9 {
+      &--#{$i} {
+          animation-delay: $anim-delay * $i;
+      }
+  }
+}
