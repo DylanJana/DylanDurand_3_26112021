@@ -50,6 +50,7 @@
 
       to {
           opacity: 0;
+          z-index: -99;
       }
   }
 
@@ -81,4 +82,32 @@
         shake-intense 0.82s 1s cubic-bezier(.36,.07,.19,.97) both,
         falling 1.18s 1.82s cubic-bezier(.37,.01,1,.37) backwards;
     }
+}
+
+/*** Favorite Heart ***/
+.restaurant__card--legend, .menu__heading--linkheart {
+  position: relative;
+}
+.first-heart {
+  color: black;
+  z-index: 2;
+  position: absolute;
+  right: 3%;
+  bottom: 40%;
+}
+
+.restaurant__card, .menu__heading--linkheart {
+  &:hover .second-heart {
+    transform: scaleY(1);
+    transition: transform 0.5s cubic-bezier(.51,.1,.63,1);
+  }
+}
+
+.second-heart {
+  color: $color-secondary;
+  position: absolute;
+  right: 3%;
+  bottom: 40%;
+  transform-origin: center;
+  transform: scaleY(0);
 }
