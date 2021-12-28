@@ -1,0 +1,84 @@
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  @keyframes shake-intense {
+    10%, 90% {
+      transform: translate3d(-3px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(4px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-6px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(6px, 0, 0);
+    }
+  }
+  
+  @keyframes falling {
+      from {
+
+      }
+      to {
+          transform: translateY(3000px);
+      }
+  }
+
+  @keyframes full-transparent {
+      from {
+          opacity: 1;
+      }
+
+      to {
+          opacity: 0;
+      }
+  }
+
+.word {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  z-index: 99;
+  animation: full-transparent 1s 2.15s both;
+}
+
+.title {
+    font-family: "Shrikhand", cursive;
+    font-size: 65px;
+    color: $color-primary;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    animation: full-transparent 1s 2.15s both;
+
+    .o-first {
+        position: absolute;
+        left: 37.85%;
+        animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both,
+        shake-intense 0.82s 1s cubic-bezier(.36,.07,.19,.97) both,
+        falling 1.18s 1.82s cubic-bezier(.37,.01,1,.37) backwards;
+    }
+}
