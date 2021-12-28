@@ -94,17 +94,24 @@
   position: absolute;
   right: 3%;
   bottom: 40%;
+
+  &:hover {
+    + .second-heart {
+      transform: scaleY(0.85);
+      transition: transform 0.5s cubic-bezier(.51,.1,.63,1);
+    }
+  }
 }
 
-.restaurant__card, .menu__heading--linkheart {
+.menu__heading--linkheart {
   &:hover .second-heart {
-    transform: scaleY(1);
+    transform: scaleY(0.85);
     transition: transform 0.5s cubic-bezier(.51,.1,.63,1);
   }
 }
 
 .second-heart {
-  color: $color-secondary;
+  color: $color-primary;
   position: absolute;
   right: 3%;
   bottom: 40%;

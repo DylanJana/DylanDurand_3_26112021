@@ -96,14 +96,18 @@
   right: 3%;
   bottom: 40%;
 }
+.first-heart:hover + .second-heart {
+  transform: scaleY(0.85);
+  transition: transform 0.5s cubic-bezier(0.51, 0.1, 0.63, 1);
+}
 
-.restaurant__card:hover .second-heart, .menu__heading--linkheart:hover .second-heart {
-  transform: scaleY(1);
+.menu__heading--linkheart:hover .second-heart {
+  transform: scaleY(0.85);
   transition: transform 0.5s cubic-bezier(0.51, 0.1, 0.63, 1);
 }
 
 .second-heart {
-  color: #FF79DA;
+  color: #9356DC;
   position: absolute;
   right: 3%;
   bottom: 40%;
