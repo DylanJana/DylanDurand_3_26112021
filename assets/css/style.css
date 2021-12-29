@@ -212,6 +212,9 @@
 .menu__parts--btn--9 {
   animation-delay: 1000ms;
 }
+.menu__parts--btn--10 {
+  animation-delay: 1111.1111111111ms;
+}
 
 /*** Base ***/
 /* Import font-size and font-style*/

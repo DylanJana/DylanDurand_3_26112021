@@ -200,7 +200,7 @@ $anim-delay: $anim-dur / 9;
 
 .menu__parts--btn {
   animation: alternate-opacity $anim-dur both ease-in-out;
-  @for $i from 1 through 9 {
+  @for $i from 1 through 10 {
       &--#{$i} {
           animation-delay: $anim-delay * $i;
       }
