@@ -155,18 +155,17 @@
 }
 
 .menu__parts--check  {
+  position: absolute;
+  right: -70px;
+  bottom: 0;
   font-size: 30px;
   color: white;
   line-height: 66px;
   text-align: center;
-  height: 66px;
+  height: 100%;
   width: 66px;
   background-color: $color-tiers;
   border-radius: 0 20px 20px 0;
-  display: inline-block;
-  position: absolute;
-  right: -70px;
-  bottom: 0;
   transform: translateX(0);
   transition: transform 1s;
   z-index: 2;
