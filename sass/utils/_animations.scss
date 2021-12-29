@@ -1,3 +1,5 @@
+
+
 @keyframes shake {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
@@ -65,7 +67,7 @@
 
 .title {
     font-family: "Shrikhand", cursive;
-    font-size: 65px;
+    font-size: 45px;
     color: $color-primary;
     display: flex;
     justify-content: center;
@@ -74,10 +76,11 @@
     height: 100vh;
     align-items: center;
     animation: full-transparent 1s 2.15s both;
+    @include desktop-only {
+      font-size: 65px;
+    }
 
     .o-first {
-        position: absolute;
-        left: 37.85%;
         animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both,
         shake-intense 0.82s 1s cubic-bezier(.36,.07,.19,.97) both,
         falling 1.18s 1.82s cubic-bezier(.37,.01,1,.37) backwards;
