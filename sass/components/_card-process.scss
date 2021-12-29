@@ -53,15 +53,13 @@
             $map: $margin, $key: mr-md,
             );
     }
+}
 
-    &--purple {
-        background-color: rgba($color-primary-lighten, 0.3);
+.process__step:hover {
+    background-color: rgba($color-primary-lighten, 0.3);
+    cursor: pointer;
 
-        &--icon {
-            color: $color-primary;
-            margin: map-get(
-            $map: $margin, $key: mr-md,
-            );
-        }
+    .process__step--icon {
+        color: $color-primary;
     }
 }

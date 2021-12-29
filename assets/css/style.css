@@ -449,12 +449,13 @@ a {
 .process__step--icon {
   margin: 0 7.5px 0 0;
 }
-.process__step--purple {
+
+.process__step:hover {
   background-color: rgba(174, 128, 229, 0.3);
+  cursor: pointer;
 }
-.process__step--purple--icon {
+.process__step:hover .process__step--icon {
   color: #9356DC;
-  margin: 0 7.5px 0 0;
 }
 
 /*** Utils ***/
