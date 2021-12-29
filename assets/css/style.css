@@ -172,6 +172,10 @@
   transition: width 1s;
 }
 
+.menu__parts--check-xl {
+  line-height: 85px;
+}
+
 /* Animation card opacity */
 @keyframes alternate-opacity {
   from {
@@ -637,6 +641,10 @@ a {
   z-index: -1;
 }
 
+.header__menu::after {
+  box-shadow: 0 0 0 transparent;
+}
+
 /* Import utils variables */
 /* Create the principals design colors*/
 /* Title */
@@ -681,6 +689,10 @@ a {
 }
 .footer__logo {
   font-family: "Shrikhand", cursive;
+  color: #fff;
+}
+.footer__logo :visited {
+  color: #fff;
 }
 .footer__nav ul {
   list-style: none;

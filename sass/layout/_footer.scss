@@ -28,6 +28,11 @@
 
     &__logo {
         font-family: $title;
+        color: $white;
+
+        :visited {
+            color:$white;
+        }
     }
 
     &__nav ul {

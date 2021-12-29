@@ -172,7 +172,7 @@
 
   i {
   transition: transform 0.5s 0.3s;
-  transform: rotate(-270deg)
+  transform: rotate(-270deg);
   }
 }
 
@@ -183,6 +183,11 @@
   white-space: nowrap;
   transition: width 1s;
 }
+
+.menu__parts--check-xl {
+  line-height: 85px;
+}
+
 /* Animation card opacity */
 @keyframes alternate-opacity {
   from {
