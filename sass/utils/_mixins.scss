@@ -38,6 +38,14 @@
     text-align: center;
     vertical-align: middle;
     border-radius: 100%;
+
+    @include tablet-only {
+        left: -32.5%;
+    }
+
+    @include desktop-only {
+        left: -11%;
+    }
 }
 
 @mixin shadow($size: $size-shadow, $shadow: $color-shadow) {

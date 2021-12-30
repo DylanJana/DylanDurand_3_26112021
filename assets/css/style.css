@@ -264,6 +264,10 @@ a {
   font-weight: 200;
 }
 
+h4.app__heading--md {
+  margin: 10px 0 0 0;
+}
+
 /* Intro home */
 .app__heading-intro {
   font-size: 1.5rem;
@@ -393,7 +397,7 @@ a {
     justify-content: space-around;
   }
 }
-.process h1 {
+.process h2 {
   width: 100%;
 }
 
@@ -411,7 +415,7 @@ a {
     /* End Responsive Design for the tablet */
   }
 }
-.process__step h2.process-1::before {
+.process__step h3.process-1::before {
   content: "1";
   display: inline-block;
   position: relative;
@@ -426,7 +430,22 @@ a {
   vertical-align: middle;
   border-radius: 100%;
 }
-.process__step h2.process-2::before {
+@media screen and (min-width: 810px) {
+  .process__step h3.process-1::before {
+    left: -32.5%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .process__step h3.process-1::before {
+    left: -11%;
+  }
+}
+@media screen and (min-width: 810px) {
+  .process__step h3.process-1::before {
+    margin-right: 9.5px;
+  }
+}
+.process__step h3.process-2::before {
   content: "2";
   display: inline-block;
   position: relative;
@@ -441,7 +460,22 @@ a {
   vertical-align: middle;
   border-radius: 100%;
 }
-.process__step h2.process-3::before {
+@media screen and (min-width: 810px) {
+  .process__step h3.process-2::before {
+    left: -32.5%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .process__step h3.process-2::before {
+    left: -11%;
+  }
+}
+@media screen and (min-width: 810px) {
+  .process__step h3.process-2::before {
+    margin-right: 19px;
+  }
+}
+.process__step h3.process-3::before {
   content: "3";
   display: inline-block;
   position: relative;
@@ -455,6 +489,21 @@ a {
   text-align: center;
   vertical-align: middle;
   border-radius: 100%;
+}
+@media screen and (min-width: 810px) {
+  .process__step h3.process-3::before {
+    left: -32.5%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .process__step h3.process-3::before {
+    left: -11%;
+  }
+}
+@media screen and (min-width: 810px) {
+  .process__step h3.process-3::before {
+    margin-right: 10.5px;
+  }
 }
 .process__step--icon {
   margin: 0 7.5px 0 0;
@@ -487,7 +536,7 @@ a {
     display: flex;
     flex-wrap: wrap;
   }
-  .restaurant h1 {
+  .restaurant h2 {
     width: 100%;
     text-align: center;
   }
@@ -645,6 +694,13 @@ a {
   box-shadow: 0 0 0 transparent;
 }
 
+a.header__element--prev i {
+  color: #000;
+}
+a.header__element--prev i:hover {
+  color: #9356DC;
+}
+
 /* Import utils variables */
 /* Create the principals design colors*/
 /* Title */
@@ -751,7 +807,7 @@ a {
 }
 
 /* Padding top and bottom title section process */
-.process h1 {
+.process h2 {
   padding: 0 0 15px 0;
 }
 
@@ -759,7 +815,7 @@ a {
 .restaurant {
   background-color: #F6F6F6;
 }
-.restaurant h1 {
+.restaurant h2 {
   padding: 0 0 15px 0;
 }
 

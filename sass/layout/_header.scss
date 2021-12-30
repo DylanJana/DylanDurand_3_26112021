@@ -39,3 +39,11 @@
 .header__menu::after {
     box-shadow: 0 0 0 transparent;
 }
+
+a.header__element--prev i {
+    color:$black;
+
+    &:hover {
+        color: $color-primary;
+    }
+}

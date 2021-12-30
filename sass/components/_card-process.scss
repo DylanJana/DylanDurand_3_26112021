@@ -17,7 +17,7 @@
     }
     /* End Responsive Design for the desktop */
 
-    h1 {
+    h2 {
         width: 100%;
     }
 }
@@ -33,19 +33,28 @@
     /* End Responsive Design for the tablet */
     }
     
-    h2.process-1::before {
+    h3.process-1::before {
         content: '1';
         @include before-process;
+        @include tablet-only {
+            margin-right: 9.5px;
+        }
     }
 
-    h2.process-2::before {
+    h3.process-2::before {
         content: '2';
         @include before-process;
+        @include tablet-only {
+            margin-right: 19px;
+        }
     }
 
-    h2.process-3::before {
+    h3.process-3::before {
         content: '3';
         @include before-process;
+        @include tablet-only {
+            margin-right: 10.5px;
+        }
     }
 
     &--icon {
